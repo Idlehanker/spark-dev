@@ -1,0 +1,20 @@
+===========
+sparkjava ref=:http://sparkjava.com/
+Inspire by https://github.com/bentolor/microframeworks-showcase
+===========
+
+
+
+#1. create java-base project by gradle command
+1> gradle init --type java-library
+
+------>
+#2. create java-base project by maven command
+template:
+mvn archetype:generate 
+	-DgroupId={project-packaging}
+	-DartifactId={project-name}
+	-DarchetypeArtifactId={maven-template} 
+	-DinteractiveMode=false
+
+1> mvn archetype:generate -DgroupId=com.ideltld.captain -DartifactId=tutor-mvn -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
