@@ -14,6 +14,7 @@ class EmbeddedJettyServerFactory implements JettyServerFactory {
         this.embeddedJettyFactoryConstructor = embeddedJettyFactoryConstructor;
     }
 
+    @Override
     public Server create(int maxThreads, int minThreads, int threadTimeoutMillis) {
         Server server;
         if(maxThreads > 0){
@@ -29,6 +30,7 @@ class EmbeddedJettyServerFactory implements JettyServerFactory {
         return server;
     }
 
+    @Override
     public Server create(ThreadPool threadPool) {
         return new Server(threadPool);
     }
