@@ -1,5 +1,7 @@
 .settings/
 .gradle/
 .vscode/
+.idea/
+.project
 build/
 target/
