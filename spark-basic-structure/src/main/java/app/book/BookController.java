@@ -11,6 +11,7 @@ import static app.util.RequestUtil.*;
 public class BookController {
 
     public static Route fetchAllBooks = (Request request, Response response) -> {
+
         LoginController.ensureUserIsLoggedIn(request, response);
         if (clientAcceptsHtml(request)) {
             HashMap<String, Object> model = new HashMap<>();

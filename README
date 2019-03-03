@@ -18,3 +18,9 @@ mvn archetype:generate
 	-DinteractiveMode=false
 
 1> mvn archetype:generate -DgroupId=com.ideltld.captain -DartifactId=tutor-mvn -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+$ a tricky
+pause at 'Generating project in Interactive mode...'
+加个参数 -DarchetypeCatalog=internal 让它不要从远程服务器上取catalog:
+
+2> mvn archetype:generate -DarchetypeCatalog=internal -DgroupId=com.ideltld.captain -DartifactId=tutor-mvn -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false

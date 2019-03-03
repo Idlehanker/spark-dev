@@ -1,0 +1,10 @@
+#1. compile and package by mvn
+------------------------------
+1> mvn clean && mvn package
+2> java -cp target/sparkexample-jar-with-dependencies.jar sparkexample/App
+
+#2. run in docker
+-----------------
+1> sudo docker build -t giantswarm/sparkexample .
+2> sudo docker run -d -p 4566:4566 giantswarm/sparkexample
+3> curl localhost:4566
